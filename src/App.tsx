@@ -20,9 +20,11 @@ function App() {
   return (
     <>
       {/* Render the quote and author */}
-      <div>
-        <p>{quote.quote}</p>
-        <p>- {quote.author}</p>
+      <div id="quote-box">
+        <div className="quote-content">
+          <h2 id="text">{quote.quote}</h2>
+          <h4 id="author">{quote.author}</h4>
+        </div>
       </div>
     </>
   );
