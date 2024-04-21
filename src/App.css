@@ -32,4 +32,13 @@
     text-align: right;
 }
 
-
+button,
+a{
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6rem 1.2rem;
+    width: fit-content;
+    font-weight: 500;
+    background: #1a1a1a;
+    cursor: pointer;
+}
