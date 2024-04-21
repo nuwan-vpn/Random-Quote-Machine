@@ -36,8 +36,8 @@ function App() {
     <>
       {/* Render the quote and author */}
       <div className="background"  style={{ backgroundColor: randomColor,  transition: 'background-color 0.3s ease-in-out'}}>
-        <div id="quote-box" style={{ backgroundColor: randomColor,  transition: 'background-color 0.6s ease-in-out'}}>
-          <div className="quote-content">
+        <div id="quote-box" >
+          <div className="quote-content" style={{ color: randomColor}} >
             <FaQuoteLeft size="20" style={{marginRight:"10px"}}/>
             <h2 id="text">{quote.quote}</h2>
             <FaQuoteRight size="20" style={{marginRight:"10px"}}/>
