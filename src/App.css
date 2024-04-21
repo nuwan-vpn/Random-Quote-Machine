@@ -43,3 +43,7 @@ a{
     cursor: pointer;
 }
 
+#tweet-quote {
+    background: #1DA1F2; /* Twitter Blue */
+}
+

@@ -43,7 +43,7 @@ function App() {
             >
               <FaTwitter color='white'/>
             </a>
-            <button id='#new-quote' onClick={changeQuote}>
+            <button id='new-quote' onClick={changeQuote}>
               Change Quote
             </button>
           </div>
