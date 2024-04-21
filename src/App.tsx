@@ -29,6 +29,17 @@ function App() {
             <FaQuoteRight size="20" style={{marginRight:"10px"}}/>
             <h4 id="author">- {quote.author}</h4>
           </div>
+          <div className="buttons">
+            <a href="twitter.com/intent/tweet"
+              id='tweet-quote'
+              style={{
+                backgroundColor:"#",
+                marginRight:"10px"
+              }}
+            >
+              <FaTwitter color='white'/>
+            </a>
+          </div>
         </div>
       </div> 
     </>
