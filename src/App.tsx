@@ -16,17 +16,27 @@ function App() {
     return quotes[Math.floor(Math.random() * quotes.length)];
   };
 
+  const getRandomColor = (): string => {
+    const red = Math.floor(Math.random() * 128);
+    const green = Math.floor(Math.random() * 128);
+    const blue = Math.floor(Math.random() * 128);
+  
+    return `rgb(${red}, ${green}, ${blue})`;
+  };
+
   const [quote, setQuote] = useState<Quote>(getRandomQuote());
+  const [randomColor, setRandomColor] = useState<string>(getRandomColor());
 
   const changeQuote = () => {
-      setQuote(getRandomQuote())
+      setQuote(getRandomQuote());
+      setRandomColor(getRandomColor());
   }
 
   return (
     <>
       {/* Render the quote and author */}
-      <div className="background">
-        <div id="quote-box">
+      <div className="background"  style={{ backgroundColor: randomColor,  transition: 'background-color 0.3s ease-in-out'}}>
+        <div id="quote-box" style={{ backgroundColor: randomColor,  transition: 'background-color 0.6s ease-in-out'}}>
           <div className="quote-content">
             <FaQuoteLeft size="20" style={{marginRight:"10px"}}/>
             <h2 id="text">{quote.quote}</h2>
@@ -43,7 +53,7 @@ function App() {
             >
               <FaTwitter color='white'/>
             </a>
-            <button id='new-quote' onClick={changeQuote}>
+            <button id='new-quote' onClick={changeQuote} style={{ backgroundColor: randomColor,  transition: 'background-color 0.9s ease-in-out'}}>
               Change Quote
             </button>
           </div>
