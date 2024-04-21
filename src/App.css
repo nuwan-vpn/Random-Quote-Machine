@@ -21,7 +21,7 @@
 }
 
 .quote-content{
-    height:  230px;
+    height:  250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
