@@ -18,6 +18,10 @@ function App() {
 
   const [quote, setQuote] = useState<Quote>(getRandomQuote());
 
+  const changeQuote = () => {
+      setQuote(getRandomQuote())
+  }
+
   return (
     <>
       {/* Render the quote and author */}
@@ -33,12 +37,15 @@ function App() {
             <a href="twitter.com/intent/tweet"
               id='tweet-quote'
               style={{
-                backgroundColor:"#",
+                backgroundColor:"",
                 marginRight:"10px"
               }}
             >
               <FaTwitter color='white'/>
             </a>
+            <button id='#new-quote' onClick={changeQuote}>
+              Change Quote
+            </button>
           </div>
         </div>
       </div> 
